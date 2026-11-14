@@ -1,0 +1,11 @@
+{
+  "title": "Brightpath",
+  "description": "An AI-driven platform for Grades 1-5 that assesses student performance, identifies learning gaps, and provides personalized feedback to enhance learning outcomes.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
