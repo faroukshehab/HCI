@@ -121,16 +121,16 @@ No environment variables, API keys or accounts are needed.
 
 ## Installation
 
-1. Clone the repository. Replace `<repository-url>` with the URL of the public repository.
+1. Clone the repository from https://github.com/faroukshehab/HCI.
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/faroukshehab/HCI.git
    ```
 
-2. Enter the project folder. Use the folder name created by `git clone`.
+2. Enter the project folder.
 
    ```bash
-   cd <project-folder>
+   cd HCI
    ```
 
 3. Install the dependencies.
@@ -195,12 +195,12 @@ npm run build
 
 ### Development test scripts (optional)
 
-During development, a set of test scripts was used. They live in `Claude outputs/enhancement-tests/` when that folder is included in the repository:
+During development, a set of test scripts was used. They are **not included in this repository**:
 
 - **`data/*.js`:** plain Node scripts that test the logic modules. Among other things they cover grading, publishing rules, saved-data migration, notifications, flags and the difficulty balancer.
 - **`browser/enh-*.part.mjs`:** end-to-end scenarios that drive Google Chrome in headless mode against `npm run preview`, through the Chrome DevTools protocol. `browser/enh.sh <scenarios>` runs them.
 
-These scripts are **not packaged as a ready-to-run test suite**:
+They are also **not packaged as a ready-to-run test suite**:
 
 - They contain absolute file paths from the development machine, which you must change at the top of `browser/check.sh`, `browser/enh.sh` and `browser/enh.mjs`.
 - The browser scenarios need a local Google Chrome installation.
